@@ -1,5 +1,7 @@
 I wanted a tool to build an agenda for Masonic meetings and also create a Meeting Minutes outline.
 
+You do need to install the python-docx library to use this, pip install python-docx
+
 How It Works:
 
     Group Selection:
