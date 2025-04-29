@@ -4,26 +4,90 @@ You do need to install the python-docx library to use this, pip install python-d
 
 How It Works:
 
-    Group Selection:
+  Step-by-Step Instructions:
 
-        Options 1–4 are prepopulated groups.
+1. Launch the Script
 
-        Option 5 allows you to type in your own group name.
+Run: python Agenda_Maker2.py
 
-    Meeting Date:
+2. Select the Group
 
-        You enter the meeting date in YYYY-MM-DD format and it is then formatted as "Month Day, Year" for display.
+Choose from:
 
-    Format Choice:
+1: Oriental-Rabboni Chapter No. 78 RAM
 
-        You choose Microsoft Word format (.docx) by entering y; otherwise, the output is plain text (.txt).
+2: Jeremiah Council No. 48
 
-    Agenda Items:
+3: Webster Groves Lodge No. 84
 
-        For "Unapproved minutes from the last meeting", you may enter multiple dates (comma-separated) in YYYY-MM-DD format.
+4: Ivanhoe Commandery No. 8
 
-        If you enter "0", "O", "none" (case-insensitive) or nothing, the function returns ["None"] so that "None" is printed in the output.
+5: Other (enter custom name)
 
-    Output:
+3. Enter the Meeting Date
 
-        The script generates the agenda and minutes documents according to the chosen format.
+Format: YYYY-MM-DD
+
+Example: 2025-05-05
+
+4. Choose File Format
+
+Type y for Word (.docx)
+
+Type n for Text (.txt)
+
+5. Choose Mode
+
+(C)reate New Agenda/Minutes
+
+(E)dit Existing Agenda/Minutes
+
+6. (Create Mode)
+
+Enter unapproved minutes dates or type 0/none.
+
+Enter items for each category when prompted.
+
+7. (Edit Mode)
+
+Script automatically creates timestamped backups (e.g., agenda_2025-05-05_20240501-1530.docx).
+
+Edit Menu Options:
+
+1: Add item
+
+2: Remove item
+
+3: View current agenda
+
+4: Reorder items
+
+5: Undo last change
+
+6: Save and Exit
+
+8. Successful Save
+
+Agenda and Minutes files are saved with the entered date.
+
+You will see: All tasks completed successfully. Goodbye!
+
+Notes:
+
+Backup copies are timestamped to prevent overwriting.
+
+Word documents use Times New Roman font.
+
+Reordering accepts comma-separated numbers.
+
+If existing files are found in Create mode, you must confirm overwrite.
+
+Common Errors and Solutions:
+
+Invalid date format: Must use YYYY-MM-DD.
+
+Typing non-numeric input when selecting category/item number: prompts a retry.
+
+End of Guide
+
+
