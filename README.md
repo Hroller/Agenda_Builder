@@ -1,3 +1,77 @@
+# Agenda_Builder2
+
+This script generates Masonic meeting agendas and minutes in plain `.txt` format, customized by group and date.
+
+---
+
+## ✅ Features
+- Supports three group types:
+  - Oriental-Rabboni Chapter No. 78 RAM
+  - Jeremiah Council No. 48
+  - Custom-named group
+- Requires a valid date (must include a year, in 2- or 4-digit format)
+- Automatically displays the day of the week for the meeting date
+- Outputs two files:
+  - `<prefix>_agenda_<date>.txt`
+  - `<prefix>_minutes_<date>.txt`
+
+---
+
+## 📦 Dependencies
+
+This script only uses Python's built-in libraries:
+- `datetime`
+- `os`
+- `re`
+
+No external packages need to be installed.
+
+---
+
+## ▶️ How to Run
+
+### Prerequisites
+- Python 3.6 or newer installed on your system
+
+### Steps
+1. Open a terminal (Command Prompt or PowerShell on Windows)
+2. Navigate to the directory where the script is saved:
+   ```
+   cd path\to\your\script
+   ```
+3. Run the script:
+   ```
+   python Agenda_Maker2_RebuiltCleaned.py
+   ```
+
+4. Follow the on-screen prompts:
+   - Select a group (1, 2, or 3)
+   - Enter the meeting date in a valid format (`YYYY-MM-DD`, `5/29/24`, or `May 29, 2024`)
+   - Enter agenda items for each category, seperate multiple agenda items in the same catagory with commas (,)
+
+---
+
+## 📁 Output
+
+Files are created in the same directory as the script:
+- Example:
+  - `OR78_agenda_2024-06-20.txt`
+  - `OR78_minutes_2024-06-20.txt`
+
+---
+
+## 🔒 Notes
+
+- Dates without a year are rejected to avoid ambiguity
+- You may edit the generated `.txt` files after creation if needed
+
+---
+
+Created by Mike Martin, customized with flexibility and Masonic structure in mind.
+
+
+
+BELOW IS DEPRECATED: It still works, but I've made the new script (Agenda_Builder2.0) MUCH simpler and easier to use:
 I wanted a tool to build an agenda for Masonic meetings and also create a Meeting Minutes outline.
 
 You do need to install the python-docx library to use this, pip install python-docx
