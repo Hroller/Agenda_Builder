@@ -56,7 +56,7 @@ This project is written in Python 3.11+ and PyQt5. To build the `.exe`:
 
 ```bash
 pip install pyinstaller
-pyinstaller --onefile --windowed --icon=agenda_Icon.ico agenda_gui_qt.py
+pyinstaller --onefile --windowed --icon=agenda_Icon.ico Agenda_Builder.py
 ```
 
 ---
