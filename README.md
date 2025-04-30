@@ -41,7 +41,7 @@ No external packages need to be installed.
    ```
 3. Run the script:
    ```
-   python Agenda_Maker2_RebuiltCleaned.py
+   python Agenda_Builder2.py
    ```
 
 4. Follow the on-screen prompts:
